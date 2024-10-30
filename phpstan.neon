@@ -1,0 +1,13 @@
+includes:
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+    level: 5
+    scanFiles:
+        - ../../../wp-load.php
+    scanDirectories:
+        - vendor/cardinity/
+        - ../../../wp-content/plugins/
+        - ../../../wp-includes/
+    paths:
+        - includes/WC_Cardinity_Gateway.php
+        - class-wc-gateway-cardinity.php
